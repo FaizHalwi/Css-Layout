@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pemrograman CSS Display 1</title>
+	<style>
+
+/*cara menggunakan css dalam 1 file html yaitu: menggunakan <style>*/
+		.navigasi{
+			background-color: lightblue;
+		}
+
+/*INLINE-BLOCK*/
+/*elemen a termasuk elemen yang tidak bisa di atur tinggi dan lebar bagroundnya*/
+/*dengan adanya display: inline-blok; maka background dari elemen a bisa di atur*/
+/*jika dispaly: inline-block; di apus maka bakcground a tidak dapat di atur*/
+		a{
+			background-color: green;
+			width: 100px;
+			height: 100px;
+			display: inline-block;
+		}
+/*NONE*/
+/*cara menghilangkan sebuah elemen dengan menggunakan dispay: none;*/
+/*jika dispaly: none; dihilangkan maka img (gambar) akan muncul kembali*/
+		img{display: none;}
+
+		img{
+			width: 300px;
+			height: 100px;
+		}
+
+/*display: inline; di gunakan untuk list menjadi berurut ke samping*/
+/*jika display: inline; di hilangkan maka list akan kembali ke posisi semula (urut ke bawah)*/
+		.navigasi li{
+			display: inline;
+		}
+
+/*h1 dan p adalah elemen yang di kasih warna bakground dengan background memanjang dari ujung layar kiri sampai ujung layar kanan*/
+		h1, p {
+			background-color: yellow;
+		}
+
+/*didalam class main terdapat p dan h2 jika dikasih background akan menyesesuaikan isi kalimat, bakcground tidak akan panjang dari ujung ke ujung*/
+		.main{
+			width: 600px;
+			background-color: yellow;
+		}
+
+/*ketika class main di atas di berikan background maka ketika salah satu elemen di dalam class main di berikan background, maka backgound tersebut akan panjang dengan panjang seperti bakground di atas (class main)*/
+		.main h2{
+			background-color: grey;
+		}
+
+/*span jika di kasih background maka background akan menyesesuaikan bungkusan span dalam suatu kalimat*/
+		.main span{
+			background-color: darkblue;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="header">
+	<h1>Selamat Datang DiWeb Haidar</h1>
+	</div>
+
+	<div class="navigasi">
+	<h2>Daftar Link</h2>
+	<ul>
+		<li><a href="#">link 1</a></li>
+		<li><a href="#">link 2</a></li>
+		<li><a href="#">link 3</a></li>
+		<li><a href="#">link 4</a></li>
+		<li><a href="#">link 5</a></li>
+	</ul>
+	</div>
+
+	<div class="main">
+	<h2>Judul Artikel</h2>	
+	<img src="Komputer.jpg" width="400px">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod necessitatibus laudantium corrupti odit asperiores harum optio obcaecati <span>alias eaque deleniti</span> illum sint, iusto nostrum, praesentium, exercitationem, unde eos provident. Dolorum.</p>
+
+	<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Quam recusandae ratione reprehenderit at sit fugiat dolorem optio architecto incidunt repudiandae, voluptate, ea vel eaque quo ad dolor officia molestias, deserunt.</p>
+	</div>
+
+	<div class="namasaya">
+	<p>Faiz Haidar Halwi</p>
+	</div>
+
+
+</body>
+</html>

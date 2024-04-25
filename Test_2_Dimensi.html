@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pemrograman CSS Dimensi Dan Overflow 2</title>
+	<style>
+		.hello{
+			/*satuan % digunakan untuk bakcground color menyesesuaikan layar website (relatif)*/
+			/*satuan px digunakan untuk background color menjadi absolut*/
+			width: 100%;
+			height: 100px;
+			background-color: green;
+		}
+		
+		/*class satu dan dua ketika satuan % digunakan pada slide di atas px, maka % akan mengikuti px, tapi jika nilai % di bawah 100% maka akan tetap dengan ukuran nilai yang diberikan*/
+		.satu{
+			width: 200px;
+			height: 100px;
+			background-color: grey;
+		}
+
+		.dua{
+			width: 100%;
+			background-color: yellow;
+		}
+
+		.tiga{
+			/*ketika background color diberikan pada width saja, maka background color akan menyesesuaikan seberapa banyak kalimat atau kata*/
+			/*akan tetapi jika bersama dengan heigth maka background menyesesuaikan dengan nilai height dan width*/
+			width: 200px;
+			height: 200px;
+			background-color: lightblue;
+			/*auto bisa diganti dengan visible, hidden dan scoll (penjelasan lengkap di binder)*/
+			overflow: auto;
+		}
+	</style>
+</head>
+<body>
+
+		<div class="hello">Hello World</div>
+		<br>
+		<div class="satu">
+			<div class="dua">Hello World</div>
+		</div>
+		<br>
+		<div class="tiga">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nulla, praesentium iste aut consequatur saepe qui sapiente consectetur sequi, odio reiciendis excepturi architecto nesciunt dolorum maxime recusandae commodi repellendus numquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem cum voluptatum nostrum corporis, voluptas illum optio in iure architecto! Libero soluta, magni. Incidunt architecto accusantium, neque, cum fugit quasi a. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+</body>
+</html>

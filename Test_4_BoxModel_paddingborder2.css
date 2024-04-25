@@ -1,0 +1,13 @@
+/*ingat*/
+/*padding mempengaruhi ukuran box, padding tidak ada nilai negatif
+dan auto*/
+div{
+	width: 300px;
+	height: 300px;
+	background-color: lightblue;
+	padding: 10px;
+	/*solid bisa diganti : dotted, dashed, double*/
+	/*jika ingin border disisi tertentu atau berbeda-beda, tinggal tambhkan
+	-left, -bottom, -right, -top*/
+	border: 10px solid black;
+}

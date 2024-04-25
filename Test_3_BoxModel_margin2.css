@@ -1,0 +1,41 @@
+/*ketika menggunakan inline/inline-block, tetapi tidak pengaruh, coba periksa
+jika ada tag br, maka itu akibatnya*/
+/*br mengakibatkan inline/inline-block menjadi tidak berfungsi*/
+div{
+	display: inline-block;
+}
+
+.utama{
+	width: 210px;
+	height: 210px;
+	background-color: gold;
+	/*cara mengunakan margin dengan mudah, bisa digabung dengan auto, 2 nilai, 3 nilai*/
+	/*cara baca seperti arah jam dari 10 ke 40(atas, kanan, bawah, kiri)*/
+	margin: 10px 20px 30px 40px;
+
+}
+
+/*cara pakai margin*/
+.satu{
+	width: 200px;
+	height: 200px;
+	background-color: lightblue;
+	margin-left: 100px;
+	margin-top: 30px;
+	margin-bottom: 150px;
+	/*pakai minus - itu bisa meniban kotak lain*/
+	margin-right: -50px;
+}
+
+.dua{
+	width: 100px;
+	height: 100px;
+	margin-top: 40px;
+	background-color: lightgreen;
+}
+
+.tiga{
+	width: 50px;
+	height: 50px;
+	background-color: lightcoral;
+}
