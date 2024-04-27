@@ -1,0 +1,47 @@
+.container{
+	width: 600px;
+	margin: auto;
+	border: 1px solid black;
+	padding: 4px;
+}
+
+.satu, .dua, .tiga{
+	width: 100px;
+	height: 100px;
+}
+
+/*jika sebuah float-left diletakan pada elemn ke 2 maka elemn ke 3 akan naik
+dan meniban elemen ke 2*/
+/*jika sebuah float-right diletakan pada suatu elemen maka akan berpindah ke 
+pojok kanan*/
+
+.satu{
+	background-color: blue;
+}
+
+.dua{
+	background-color: red;
+	float: right;
+}
+
+.tiga{
+	background-color: yellow;
+}
+
+.container-dua{
+	width: 600px;
+	margin: auto;
+	border: 1px solid black;
+	padding: 4px;
+	overflow: auto;
+/*overflow untuk kotak membaca gambar itu ada, maka kotak akan menyesesuaikan
+gambar*/
+}
+
+/*float diberikan pada gambar, maka teks yang bersamaan dibungkus gambar
+text akan mengelilingi gambar*/
+
+img{
+	float: left;
+	margin: 10px;
+}

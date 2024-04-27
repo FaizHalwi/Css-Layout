@@ -1,0 +1,37 @@
+.container{
+	width: 800px;
+	border: 2px solid black;
+	margin: auto;
+	padding: 5px;
+}
+
+/*pada programan ini, harus ingat, setiap width harus total nya sama dengan
+yang ada width container */
+/*jika nilai width tidak sama dengan width container maka akan berantakan*/
+/*float berfungsi untuk meratakan output*/
+
+.kiri{
+	width: 150px;
+	height: 500px;
+	background-color: lightblue;
+	float: left;
+}
+
+.tengah{
+	width: 500px;
+	height: 500px;
+	background-color: gold;
+	float: left;
+}
+
+.kanan{
+	width: 150px;
+	height: 500px;
+	background-color: red;
+	float: left;
+}
+
+.clear{
+	clear: left;/* left bisa ganti, both (membersihkan 2 sekaligus)
+	dan right*/
+}

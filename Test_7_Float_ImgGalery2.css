@@ -1,0 +1,25 @@
+.container{
+	width: 600px;  
+	border: 2px solid black;
+	margin: auto;
+	padding: 5px;
+}
+
+/*line-height untuk meletakan angka/huruf di tengah kotak*/
+/*float untuk meratakan output*/
+.kotak{
+	width: 100px;
+	height: 100px;
+	background-color: lightblue;
+	color: green;
+	text-align: center;
+	line-height: 100px;
+	font-size: 40px;
+	margin: 3px;
+	float: left; /*left bisa diganti right*/
+}
+
+.clear{
+/*jikz clear nya left, maka float juga left, smaa sebaliknya*/
+	clear: left;
+}

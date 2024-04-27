@@ -1,0 +1,10 @@
+/*cara semua element menjadi dempet,tidak ada space*/
+body, h1, p{
+	margin: 0;
+}
+
+div{
+	width: 200px;
+	height: 200px;
+	background-color: lightblue;
+}
