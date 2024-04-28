@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pemrograman CSS Posision 8</title>
+	<style type="text/css">
+		
+		div{
+			width: 200px;
+			height: 200px;
+			margin: auto;
+		}
+
+		.satu{ 
+			background-color: lightblue;
+		}
+
+/*position relative digunakan untuk menggerakan element/kotak tanpa mengaruhi elemen disekitarnya*/
+		.dua{
+			background-color: lightcoral;
+			position: relative;
+			top: 10px;
+		}
+
+/*position absolute ketika digunakan kotak yang dibawah nya akan menghilang, kotak dibawha nya akan berada di bawah kotak ketiga*/
+		.tiga{
+			background-color: lightgreen ;
+/*			position: absolute;*/
+			left: 20px;
+		}
+
+		.empat{
+			background-color: grey;
+		}
+
+		.container{
+			width: 600px;
+			height: 650px;
+			border: 3px solid black;
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<div class="satu"></div>
+	<div class="dua"></div>
+	<div class="tiga"></div>
+	<div class="empat"></div>
+</div>
+	
+</body>
+</html> 
